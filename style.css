@@ -1,0 +1,499 @@
+/* 
+*  CSS TABLE OF CONTENTS
+*   
+*  1 - Global
+*  2 - Header
+*  3 - Slideshow
+*  4 - About Us
+*  5 - Projects
+*  6 - Footer
+*  7 - Media Queries
+*
+*/
+
+/*
+*
+* ----- GLOBAL
+*
+*/
+
+:root {
+    --accentgreen: #cee002;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    color: #666;
+    font-family: poppins, sans-serif;
+    font-size: 0.9rem;
+    font-weight: 400;
+    letter-spacing: .025em;
+    line-height: 2.1428;
+    margin: 0;
+    padding-left: 4.3rem;
+    padding-right: 4.3rem;
+}
+
+h1, h3, .phone, .text, .number {
+    font-weight: 600;
+}
+
+h1 {
+    color: #000;
+    font-size: 2.571rem;
+    letter-spacing: 0;
+    line-height: 1.166;
+    margin: 0;
+}
+
+h3 {
+    font-size: 2.142rem;
+    letter-spacing: -.05em;
+    line-height: 1.2;
+}
+
+p {
+    margin-bottom: 2.6rem;
+    word-break: break-word;
+}
+
+a:hover {
+    color: var(--accentgreen);
+}
+
+.black {
+    color: #000;
+}
+
+section {
+    margin-left: 4rem;
+    margin-right: 4rem;
+    padding: 8rem 0;
+}
+
+.inline {
+    display: inline-block;
+}
+
+/*
+*
+* ----- HEADER
+*
+*/
+
+header {
+    background-color: white;
+    box-shadow: 0 0 65px rgba(0, 0, 0, .07);
+    left: 0px;
+    padding: 1.7rem 4.3rem 0rem 4.3rem;
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    z-index: 100;
+}
+
+.logo {
+    text-decoration: none;
+}
+
+.logo img {
+    margin-right: .65rem;
+    vertical-align: top;
+}
+
+.logo h1 {
+    font-size: 1.5rem;
+    line-height: 1;
+    margin: 0px;
+}
+
+.logo h2 {
+    color: #999;
+    font-size: .8rem;
+    font-weight: 370;
+    margin-top: -.5rem;
+}
+
+
+header .right {
+    align-items: start;
+    display: flex;
+    float: right;
+}
+
+header .divider {
+    background-color: #e0e0e0;
+    height: 3.3rem;
+    margin: -1rem 4.5rem 0;
+    width: 1px;
+}
+
+.phone {
+    text-transform: uppercase;
+}
+
+.socials {
+    flex-shrink: 0;
+    margin: 0px;
+    margin-right: 8rem;
+    padding: 0px;
+}
+
+.socials li {
+    float: left;
+    list-style-type: none;
+    margin-left: 2rem;
+}
+
+header .fa {
+    font-size: 1.05rem;
+}
+
+.socials li:first-child {
+    margin-left: 0px;
+}
+
+.socials li a {
+    color: black;
+    text-decoration: none;
+}
+
+header button {
+    background-color: inherit;
+    border: none;
+    margin: none;
+}
+
+/*
+*
+* ----- SLIDESHOW
+*
+*/
+
+.slideshow {
+    height: 100%;
+}
+
+.slideshow .border {
+    border: .357rem solid var(--accentgreen);
+    height: 19em;
+    width: 10em;
+    position: absolute;
+    bottom: 15%;
+    z-index: 1;
+    left: 17%;
+}
+
+.slideshow .text {
+    bottom: 20%;
+    color: white;
+    font-size: 2.65em;
+    left: 20%;
+    line-height: 50px;
+    position: absolute;
+    z-index: 10;
+}
+
+.slideshow img {
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    width: 100%;
+}
+
+.slideshow>.slideview {
+    display: none;
+    height: 100%;
+    position: relative;
+}
+
+.slideshow a {
+    bottom: 2em;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 16px;
+    position: absolute;
+    transition: 0.6s ease;
+    user-select: none;
+    width: auto;
+}
+
+.slideshow a:hover {
+    color: var(--accentgreen);
+}
+
+.slideshow .prev {
+    left: 7em;
+}
+
+.slideshow .next {
+    right: 7em;
+}
+
+/*
+*
+* ----- ABOUT US
+*
+*/
+
+.aboutus {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-right: 0;
+    padding-top: 12rem;
+}
+
+.aboutus .leftcolumn {
+    flex-basis: 45%;
+}
+
+.aboutus .rightcolumn {
+    flex-basis: 50%;
+}
+
+.aboutus .subtitle {
+    color: var(--accentgreen);
+    font-size: 1.14rem;
+    font-weight: 500;
+    letter-spacing: .1em;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.aboutus h1 {
+    margin-bottom: 5rem;
+}
+
+.experience {
+    position: relative;
+}
+
+.experience .border {
+    border: .357rem solid var(--accentgreen);
+    height: 12.15rem;
+    vertical-align: middle;
+    width: 12.15rem;
+}
+
+.experience .texte {
+    left: -1rem;
+    position: absolute;
+    top: 3em;
+    vertical-align: middle;
+}
+
+.experience .number {
+    color: #000;
+    font-size: 7.142rem;
+    line-height: 1;
+    vertical-align: middle;
+}
+
+.experience .years {
+    color: #000;
+    font-size: 1.57rem;
+    line-height: 1.181;
+    margin: -1rem 0 0 .8rem;
+    vertical-align: middle;
+}
+
+.dotspicture {
+    float: right;
+    position: relative;
+}
+
+.dotspicture img {
+    display: block;
+    float: right;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+
+.dotspicture .dotsbackground {
+    background: url(images/dots.png) 0 0 repeat;
+    bottom: -15%;
+    height: 57.2%;
+    left: -20%;
+    position: absolute;
+    width: 100%;
+}
+
+
+/*
+*
+* ----- PROJECTS
+*
+*/
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 2rem -4rem -4rem -4rem;
+}
+
+.project {
+    position: relative;
+    width: 25%;
+}
+
+.project .description {
+    bottom: 3em;
+    color: white;
+    left: 3em;
+    position: absolute;
+    transition: .5s ease;
+    z-index: 10;
+}
+
+.project:hover .description {
+    color: black;
+    z-index: 5;
+}
+
+.projects img {
+    height: auto;
+    max-width: 100%;
+}
+
+.project a {
+    color: white;
+    text-decoration: none;
+    transition: .5s ease;
+}
+
+.project a:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+.project:hover>.overlay {
+    opacity: 0.85;
+}
+
+.overlay {
+    background: var(--accentgreen);
+    min-height: 98%;
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    transition: .5s ease;
+    width: 100%;
+    z-index: 0;
+}
+
+/*
+*
+* ----- FOOTER
+*
+*/
+
+footer {
+    border-top: 1px solid #e1e1e1;
+    color: #000;
+    line-height: 1.71;
+    padding: 10.28rem 0;
+}
+
+.flexfooter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+footer>div>div {
+    margin-bottom: 5em;
+    margin-right: 5em;
+}
+
+footer>div :last-child {
+    margin-right: 0px;
+}
+
+footer a {
+    color: black;
+    text-decoration: none;
+}
+
+.languages a:first-child {
+    color: var(--accentgreen);
+}
+
+footer .socials {
+    margin-right: 0;
+}
+
+
+
+/*
+*
+* ----- MEDIA QUERIES
+*
+*/
+
+@media screen and (max-width: 1100px) {
+    .phone, .divider {
+        display: none;
+    }
+    .aboutus {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-top: 6rem;
+    }
+    .aboutus .leftcolumn {
+        flex-basis: 100%;
+        padding-bottom: 5em;
+    }
+    .aboutus .rightcolumn {
+        flex-basis: 100%;
+    }
+    .aboutus h1 {
+        margin-bottom: 3rem;
+    }
+    .project {
+        width: auto;
+    }
+    .project .description {
+        left: 2em;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    body {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    h3 {
+        font-size: 1.3em;
+    }
+
+    section {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        padding: 5rem 0;
+    }
+
+    header {
+        padding: 1.7rem 2.3rem 0rem 2.3rem;
+    }
+    
+    header .socials {
+        display: none;
+    }   
+
+    .slideshow .text, .slideshow .border {
+        left: 10%;
+    }
+
+    .experience {
+        scale: 0.7;
+    }
+}

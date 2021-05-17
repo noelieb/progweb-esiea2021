@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <a href="" class="logo">
+            <img src="images/logo.png" alt="">
+            <div class="titres inline">
+                <h1>bauhaus</h1>
+                <h2>architecture</h2>
+            </div>
+        </a>
+        <div class="right">
+            <span class="phone">call us: <span class="black">(+080) 9684 32 45 789</span></span>
+            <div class="divider">
+            </div>
+            <ul class="socials">
+                <li><a href="" class="fa fa-twitter"></a></li>
+                <li><a href="" class="fa fa-facebook"></a></li>
+                <li><a href="" class="fa fa-google"></a></li>
+                <li><a href="" class="fa fa-linkedin"></a></li>
+                <li><a href="" class="fa fa-dribbble"></a></li>
+            </ul>
+            <button class="menu fa fa-bars"></button>
+            </button>
+
+        </div>
+    </header>
+    <div class="slideshow">
+        <div class="border inline"></div>
+        <div class="slideview">
+            <img src="images/slide1.jpg" style="width:100%">
+            <h2 class="text">The luxury <br> residence in the <br> forest</h2>
+        </div>
+        <div class="slideview">
+            <img src="images/slide2.jpg" style="width:100%">
+            <h2 class="text">Small <br> House Near <br> Wroclaw</h2>
+        </div>
+        <div class="slideview">
+            <img src="images/slide3.jpg" style="width:100%">
+            <h2 class="text">The luxury <br> residence in the <br> forest</h2>
+        </div>
+        <div class="slideview">
+            <img src="images/slide4.jpg" style="width:100%">
+            <h2 class="text">Small <br> House Near <br> Wroclaw</h2>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <section class="aboutus">
+        <div class="leftcolumn">
+            <div class="subtitle inline">
+                about us
+            </div>
+            <h1>
+                We Are The Leader In The Architectural
+            </h1>
+            <p>For each project we establish relationships with partners who we know will help us create added value for
+                your project. As well as bringing together the public and private sectors, we make sector-overarching
+                links to gather knowledge and to learn from each other</p>
+            <div class="experience">
+                <div class="border inline"></div>
+                <div class="texte inline">
+                    <div class="number inline">26</div>
+                    <div class="years inline">Years
+                        <br>
+                        Experience
+                        <br>
+                        Working
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="rightcolumn">
+            <div class="dotspicture">
+                <img src="images/rightaboutus.jpg" alt="">
+                <div class="dotsbackground"></div>
+            </div>
+
+        </div>
+    </section>
+    <section>
+        <h1>Latest Projects</h1>
+        <div class="projects">
+            <div class="project">
+                <img src="images/project1.jpg" />
+                <div class="description">
+                    <h3>Triangle <br> Concrete House <br> On Lake</h3>
+                    <a href=""> See project </a>
+                </div>
+                <div class="overlay">
+                </div>
+            </div>
+            <div class="project">
+                <img src="images/project2.jpg" />
+                <div class="description">
+                    <h3>Ocean <br> Museum <br> Italy</h3>
+                    <a href=""> See project </a>
+                </div>
+                <div class="overlay">
+                </div>
+            </div>
+            <div class="project">
+                <img src="images/project3.jpg" />
+                <div class="description">
+                    <h3>Milko <br> Co-Working <br> Building</h3>
+                    <a href=""> See project </a>
+                </div>
+                <div class="overlay">
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="flexfooter">
+            <div>
+                <a href="" class="logo">
+                    <img class="inline" src="images/logo.png" alt="">
+                    <div class="inline">
+                        <h1>bauhaus</h1>
+                        <h2>architecture</h2>
+                    </div>
+                </a>
+            </div>
+            <div class="rights">
+                © Bauhaus 2017 <br>
+                All Rights Resevered
+            </div>
+            <div class="links">
+                <a href="">Site Map</a>
+                <br>
+                <a href="">Term & Conditions</a>
+                <br>
+                <a href="">Privacy Policy</a>
+                <br>
+                <a href="">Help</a>
+                <br>
+                <a href="">Affiliatep</a>
+            </div>
+            <div class="link2">
+                <a href="">Our Location</a><br>
+                <a href="">Career</a><br>
+                <a href="">About</a><br>
+                <a href="">Contact</a><br>
+            </div>
+            <div class="languages">
+                <a href="">ENG</a>
+                <br>
+                <a href="">FRA</a>
+                <br>
+                <a href="">GER</a>
+            </div>
+            <div class="socialsfooter">
+                <ul class="socials">
+                    <li><a href="" class="fa fa-twitter"></a></li>
+                    <li><a href="" class="fa fa-facebook"></a></li>
+                    <li><a href="" class="fa fa-google"></a></li>
+                    <li><a href="" class="fa fa-linkedin"></a></li>
+                    <li><a href="" class="fa fa-dribbble"></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<script>
+    var currentSlide = 0;
+    var slides = document.getElementsByClassName("slideview");
+    loop();
+
+    function plusSlides(n) {
+        currentSlide = n + currentSlide;
+        if (currentSlide > slides.length) currentSlide = 1;
+        if (currentSlide <= 0) currentSlide = 4;
+        showcurrent();
+    }
+
+    function showcurrent() {
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slides[currentSlide - 1].style.display = "block";
+    }
+
+    function loop() {
+        plusSlides(1);
+        setTimeout(loop, 5000);
+    }
+
+
+</script>
+
+</html>
